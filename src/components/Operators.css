@@ -1,0 +1,14 @@
+.operator {
+  color: rgba(0, 0, 0, 0);
+  font-size: 30px;
+  font-weight: 200;
+}
+.operator i {
+  color: #af6;
+}
+
+#equals {
+  background: #480;
+  border: 1px solid #480;
+  grid-row: 7;
+}

@@ -1,0 +1,15 @@
+#digitsContainer {
+  grid-row: 5 / span 3;
+  grid-column: 1 / span 3;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 20px;
+  column-gap: 10px;
+}
+#zero {
+  position: absolute;
+  bottom: 80px;
+  right: -110px;
+  width: 100px;
+  height: 60px;
+}

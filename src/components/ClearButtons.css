@@ -1,0 +1,20 @@
+#backspace,
+#clear {
+  height: 60px;
+  font-size: 30px;
+  border: none;
+  background: black;
+  border-bottom: 1px solid #444;
+  border-radius: 0;
+}
+#clear {
+  color: rgb(204, 96, 86);
+}
+
+#backspace {
+  grid-column: 3 / span 2;
+}
+.backspace i {
+  text-align: right;
+  padding-right: 30px;
+}

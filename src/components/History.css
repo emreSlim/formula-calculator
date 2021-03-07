@@ -1,0 +1,64 @@
+#historyContainer {
+  box-sizing: border-box;
+  display: none;
+  background: black;
+  color: white;
+  position: absolute;
+  bottom: 28px;
+  left: 30px;
+  right: 30px;
+  height: 320px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hide;
+}
+li {
+  text-align: right;
+  border-bottom: 1px solid #444;
+  padding-right: 10px;
+}
+#history {
+  box-sizing: border-box;
+  padding-right: 10px;
+  background: black;
+  width: 100%;
+  overflow-y: scroll;
+  margin: 0;
+  height: 100%;
+  padding-bottom: 50px;
+}
+.clear-history {
+  background: #480;
+  color: white;
+  width: 200px;
+  border: 1px solid #480;
+  position: absolute;
+  bottom: 10px;
+  right: 113.5px;
+  height: 2em;
+  font-size: 22px;
+}
+#showHistory {
+  height: 60px;
+  font-size: 30px;
+  border: none;
+  background: black;
+  border-bottom: 1px solid #444;
+  border-radius: 0;
+}
+#showHistory {
+  grid-row: 3;
+  grid-column: 1;
+}
+.input {
+  margin: auto;
+  margin-top: 5px;
+  font-size: 16px;
+}
+.output {
+  margin: 5px auto;
+  color: #af6;
+  font-size: 20px;
+}

@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+#calculator {
+  margin-left: 2vw;
+  background: #000;
+  width: 430px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 250px 50px 70px 60px 60px 60px 60px;
+  row-gap: 20px;
+  column-gap: 10px;
+  word-wrap: break-word;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+i {
+  box-sizing: border-box;
+  padding-top: 15px;
+  width: 100%;
+  height: 100%;
+  color: #ccc;
+  border-radius: inherit;
+}
+#backspace:active,
+#clear:active,
+#showHistory:active,
+i:active {
+  background: #444;
+}
+button {
+  padding: 0;
+  border-radius: 30px;
+  outline: none;
+  background: #222;
+  font-size: 50px;
+  font-weight: 200;
+  border: 1px solid #444;
+}
+button:active {
+  background: #444;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.digit,
+#equals,
+#decimal {
+  color: #fff;
+}
+
+#equals:active,
+.clear-history:active {
+  background-color: #af6;
+}
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #444;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6c3;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #af6;
+}
+@media only screen and (max-width: 505px) {
+  #calculator {
+    transform: scale(0.9, 0.9);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 455px) {
+  #calculator {
+    transform: scale(0.8, 0.8);
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 405px) {
+  #calculator {
+    transform: scale(0.7, 0.7);
+  }
+}
+@media only screen and (max-width: 355px) {
+  #calculator {
+    transform: scale(0.6, 0.6);
+  }
+}
+@media only screen and (max-width: 305px) {
+  #calculator {
+    transform: scale(0.5, 0.5);
   }
 }
